@@ -1,0 +1,49 @@
+.navbar{
+    z-index: 99999;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    padding: 2rem;
+}
+.centerItems{
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.endItems{
+    width: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.olItems{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.olItems2{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+ol li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

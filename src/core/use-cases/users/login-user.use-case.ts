@@ -1,13 +1,9 @@
 import { HttpAdapter } from "../../../config/adapters/http/http.adapter";
+import { UserLogin, UserResponse } from "../../../infraestructure/interfaces/user.responses";
 
-export interface UserLogin{
-    email: string;
-    password: string;
-}
-
-export const loginUserUseCase = async (fetcher : HttpAdapter, user : UserLogin) : Promise<UserLogin> => {
+export const loginUserUseCase = async (fetcher : HttpAdapter, user : UserLogin) : Promise<UserResponse> => {
     try {
-        const newUser = await fetcher.postLogin<UserLogin>('/users/login', user);
+        const newUser = await fetcher.postLogin<UserResponse>('/user/login', user);
         return newUser;
     } catch (error) {
         throw new Error(`Error logging in user: ${error}`);
