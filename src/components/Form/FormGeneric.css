@@ -1,0 +1,21 @@
+/* Para hacer que todos los inputs tengan el mismo tamaño */
+.ant-input, .ant-input-password {
+    width: 100%;
+}
+
+/* Para alinear el checkbox con el texto */
+.checkbox-inline {
+    display: flex;
+    align-items: center;
+}
+
+/* Asegurar que el botón esté centrado */
+.login_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSubmit{
+    margin: 1rem;
+}
